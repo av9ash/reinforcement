@@ -8,16 +8,16 @@ Carry out the following steps to set up the environment for this assignment.
 	<li> You will need to use "waffle" model for this assignment.</li>
 	<li>Run catkin_make from your catkin_ws. </li>
 	<li>Run source devel/setup.bash from your catkin_ws</li>
-	<li>In catkin_ws/src/Planning/scirpts/server.py change root_path to your catkin_ws/src/Planning. Please use absolute path.</li>
+	<li>In catkin_ws/src/reinforcement/scirpts/server.py change root_path to your catkin_ws/src/reinforcement. Please use absolute path.</li>
 </ol>
 <br>
 <br>
 To start the execution, you will first need to run <b>"server.py"</b>. This will generate a random environment which can be run in Gazebo using launch file <b>"maze.launch"</b>. This will also generate partial PDDL problem file with objects and initial state. You can specify the number of subjects using the  argument "-sub". To enable the turtlebot3 to move, you will need to run move_tbot3.py 
 <br>
 <ul>
-<li>To run server file, execute <b>rosrun planning server.py</b>
-	<li>To launch maze in gazebo, execute <b>roslaunch planning maze.launch</b></li>
-	<li>To run move_tbot3.py, execute <b>rosrun planning move_tbot3.py</b></li>
+<li>To run server file, execute <b>rosrun reinforcement server.py</b>
+	<li>To launch maze in gazebo, execute <b>roslaunch reinforcement maze.launch</b></li>
+	<li>To run move_tbot3.py, execute <b>rosrun reinforcement move_tbot3.py</b></li>
 </ul>
 
 The set of actions contains 10 actions. These 10 actions include 5 careful actions and 5 normal actions. The only difference between careful and normal actions is that careful actions have a higher probability of being successful and have a higher cost. These actions include,
