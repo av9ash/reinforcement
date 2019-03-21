@@ -20,16 +20,16 @@ To start the execution, you will first need to run <b>"server.py"</b>. This will
 	<li>To run move_tbot3.py, execute <b>rosrun planning move_tbot3.py</b></li>
 </ul>
 
-The set of actions contains total 10 actions. This 10 actions include 5 careful actions and 5 normal actions. The only difference between careful and normal actions is careful actions have higher probability to be successfull with higher cost. This actions include,
+The set of actions contains 10 actions. These 10 actions include 5 careful actions and 5 normal actions. The only difference between careful and normal actions is that careful actions have a higher probability of being successful and have a higher cost. These actions include,
 <ul>
-  <li>careful/normal MoveF: If successfull, moves turtlebot3 forward, otherwise turtlebot3 stays still </li>
-  <li>careful/normal TurnCW: If successfull, rotates turtlebot3 in clockwise direction by 90 degree, otherwise, turtlebot3 rotaes in the opposite direction by 90 degrees. </li>
-  <li>careful/normall TurnCCW: If successfull, rotates turtlebot3 in counter-clockwise direction by 90 degree, otherwise, turtlebot3 rotaes in the opposite direction by 90 degrees. </li>
-  <li>careful/normal pick book_i: If successful, picks the book_i, otherwise no effect. </li>
-  <li>careful/normal place book_i bin_k : If successful, places book_i in bin_k </li>
+  <li>careful|normal MoveF: If successful, moves turtlebot3 forward, otherwise turtlebot3 stays still </li>
+  <li>careful|normal TurnCW: If successful, rotates turtlebot3 in clockwise direction by 90 degree, otherwise, turtlebot3 rotaes in the opposite direction by 90 degrees. </li>
+  <li>careful|normal TurnCCW: If successful, rotates turtlebot3 in counter-clockwise direction by 90 degree, otherwise, turtlebot3 rotaes in the opposite direction by 90 degrees. </li>
+  <li>careful|normal pick book_i: If successful, picks the book_i, otherwise no effect. </li>
+  <li>careful|normal place book_i bin_k : If successful, places book_i in bin_k </li>
 </ul>
 
-Once you put a book in a bin, there is no way to take that book out. When all the books are placed in to some bins, the terminal state is reached. You should not perform any action after terminal state is reached.
+Once you put a book in a bin, there is no way to take that book out. When all the books are placed in to some bins, the terminal state is reached. Taking actions in terminal states have no effect on the state and no reward is obtained.
 
 The provided problem API (problem.py) contains following actions.
 <ul>
