@@ -34,6 +34,6 @@ Once you put a book in a bin, there is no way to take that book out. When all th
 The provided problem API (problem.py) contains following actions.
 <ul>
   <li>get_all_actions: returns a list of all possible grounded actions. </li>
-  <li>execute_\<action_name\> <params>: executes the action if feasible. return success_code (1 or -1), next state and reward for the action. </li>
-  <li>is_terminal_state <state>: returns if the given state is a terminal state or not. </li>
+  <li>execute_{action_name} {params}: executes the action if feasible. return success_code (1 or -1), next state and reward for the action. </li>
+  <li>is_terminal_state {state}: returns if the given state is a terminal state or not. </li>
     </ul>    
