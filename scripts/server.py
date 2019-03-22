@@ -7,7 +7,6 @@ import sys
 import argparse
 import time
 from action_server import RobotActionsServer 
-import problem_generator
 import pickle
 
 
