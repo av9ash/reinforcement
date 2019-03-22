@@ -1,0 +1,6 @@
+string book_name
+string bin_name
+---
+float64 result
+string next_state
+float64 reward

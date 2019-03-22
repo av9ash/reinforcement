@@ -1,0 +1,19 @@
+Subjects=1, Books=1, Seed=1
+
+Trajectory: ['Careful_Pick book_2 -25.0', 'Normal_MoveF -2.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_TurnCCW -2.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Normal_TurnCW -2.0', 'Careful_TurnCCW -2.0', 'Careful_TurnCCW -2.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_Place book_2 trolly_1 500.0']
+
+Subjects=1, Books=1, Seed=2
+
+Trajectory: ['Careful_TurnCCW -2.0', 'Normal_MoveF -2.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Normal_MoveF -2.0', 'Careful_Pick book_1 -25.0', 'Normal_TurnCW -2.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_Place book_1 trolly_2 500.0']
+
+Subjects=2, Books=1, Seed=3
+
+Trajectory: ['Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_MoveF -10.0', 'Careful_MoveF -10.0', 'Careful_TurnCCW -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_MoveF -10.0', 'Careful_TurnCW -10.0', 'Normal_MoveF -2.0', 'Careful_Pick book_2 -25.0', 'Careful_MoveF -10.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Careful_TurnCCW -2.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Careful_TurnCW -10.0', 'Careful_MoveF -10.0', 'Careful_TurnCW -10.0', 'Normal_MoveF -2.0', 'Careful_Place book_2 trolly_1 500.0']
+
+Subjects=2, Books=1, Seed=4
+
+Trajectory: ['Careful_TurnCCW -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_Pick book_1 -25.0', 'Careful_Pick book_1 -25.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_TurnCW -10.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Normal_MoveF -2.0', 'Careful_Place book_1 trolly_2 500.0']
+
+subjects=1, Books=1, Seed=8
+
+Trajectory: ['Careful TurnCCW -2.0', 'Careful TurnCCW -2.0', 'Careful TurnCCW -2.0', 'Normal TurnCCW -2.0', 'Normal TurnCCW -2.0', 'Normal MoveF -2.0', 'Careful Pick book_1 -25.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Careful TurnCW -10.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Normal MoveF -2.0', 'Careful Place book_1 trolly_2 500.0']
