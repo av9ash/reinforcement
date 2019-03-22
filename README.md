@@ -12,7 +12,7 @@ Carry out the following steps to set up the environment for this assignment.
 </ol>
 <br>
 <br>
-To start the execution, you will first need to run <b>"server.py"</b>. This will generate a random environment which can be run in Gazebo using launch file <b>"maze.launch"</b>. This will also generate partial PDDL problem file with objects and initial state. You can specify the number of subjects using the  argument "-sub". To enable the turtlebot3 to move, you will need to run move_tbot3.py 
+To start the execution, you will first need to run <b>"server.py"</b>. This will generate a random environment which can be run in Gazebo using launch file <b>"maze.launch"</b>. This will also generate partial PDDL problem file with objects and initial state. You can specify the number of subjects using the  argument "-sub". "move_tbot3.py" contains services to enable Turtlebot3 to move around.
 <br>
 <ul>
 <li>To run server file, execute <b>rosrun reinforcement server.py</b>
