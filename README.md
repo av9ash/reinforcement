@@ -5,7 +5,7 @@ Carry out the following steps to set up the environment for this assignment.
 	<li>Copy all the folders from Models/ and paste it to your ~/.gazebo/Models </li>
 	<li>Copy _4__5.jpg and basket.dae from turtle_basket folder to your catkin_ws/src/turtlebot3/turtlbot3_description/meshes/basket. You will need to create the "basket" folder.</li>
 	<li> Copy turtlebot3_waffle.urdf.xacro to your catkin_ws/src/turtlebot3/turtlbot3_description/urdf/ </li>
-	<li> You will need to use "waffle" model for this assignment.</li>
+	<li> You will need to use <strikethrough>"waffle"</strikethrough> model for this assignment.</li>
 	<li>Run catkin_make from your catkin_ws. </li>
 	<li>Run source devel/setup.bash from your catkin_ws</li>
 	<li>In catkin_ws/src/reinforcement/scirpts/server.py change root_path to your catkin_ws/src/reinforcement. Please use absolute path.</li>
