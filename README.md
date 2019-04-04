@@ -12,7 +12,7 @@ Carry out the following steps to set up the environment for this assignment.
 </ol>
 <br>
 <br>
-To start the execution, you will first need to run <b>"server.py"</b>. This will generate a random environment which can be run in Gazebo using launch file <b>"maze.launch"</b>. You can specify the number of subjects using the  argument "-sub". If you want to run the code in headless mode thent use "-h 1" and to visualize using gazebo use "-h 0" with the server.py. By default, it will be in the headless mode. "move_tbot3.py" contains services to enable Turtlebot3 to move around if you choose to run the gazebo.
+To start the execution, you will first need to run <b>"server.py"</b>. This will generate a random environment which can be run in Gazebo using launch file <b>"maze.launch"</b>. You can specify the number of subjects using the  argument "-sub". If you want to run the code in headless mode thent use "-headless 1" and to visualize using gazebo use "-headless 0" with the server.py. By default, it will be in the headless mode. "move_tbot3.py" contains services to enable Turtlebot3 to move around if you choose to run the gazebo.
 <br>
 <ul>
 <li>To run server file, execute <b>rosrun reinforcement server.py [options]</b>
