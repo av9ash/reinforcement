@@ -38,3 +38,10 @@ The provided problem API (problem.py) contains following actions.
 	<li>is_terminal_state {<strike>state</strike>}: returns if the given state is a terminal state or not. </li>
 	<li>reset_world : resets the world. (if using gazebo, you need to launch gazebo again). </li>
     </ul>    
+
+<h2>Updates in the code:</h2>
+<ul>
+	<li>is_terminal_state does not take any arguments now.</li>
+	<li>reset_world service added.</li>
+	<li>Option added to perform learning without gazebo simulation.</li>
+</ul>
