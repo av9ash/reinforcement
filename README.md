@@ -951,6 +951,7 @@
 	<li>-headless - specifies the headless mode (1 for headless, 0 for gazebo) </li>
 	<li>-action_seed - specifies the random seed for stochastic action outcomes. </li>
 </ul>
+
 <br>
 <ul>
 <li>To run server file, execute <b>rosrun reinforcement server.py [options]</b>
@@ -959,6 +960,7 @@
 </ul>
 <p>"move_tbot3.py" contains the services to enable movement of Turtlebot3 in gazebo. It is required to be run only if gazebo mode is selected (-headless 0).</p>
 <p>The set of actions contains 10 actions. These 10 actions include 5 careful actions and 5 normal actions. The only difference between careful and normal actions is that careful actions have a higher probability of being successful and have a higher cost. These actions include,</p>
+
 <ul>
   <li>careful|normal MoveF: If successful, moves turtlebot3 forward, otherwise turtlebot3 stays still </li>
   <li>careful|normal TurnCW: If successful, rotates turtlebot3 in clockwise direction by 90 degree, otherwise, turtlebot3 rotaes in the opposite direction by 90 degrees. </li>
@@ -974,13 +976,19 @@
 	<li>is_terminal_state {<strike>state</strike>}: returns if the given state is a terminal state or not. </li>
 	<li>reset_world : resets the world. (if using gazebo, you need to launch gazebo again). </li>
     </ul>    
+<<<<<<< HEAD
 <h2><a id="user-content-change-log" class="anchor" aria-hidden="true" href="#change-log"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change log:</h2>
+=======
+
+<h2>Change log:</h2>
+>>>>>>> 669f7f55c8391d307fa9ddf00fa973b24f309a81
 <ul>
 	<li>is_terminal_state does not take any arguments now.</li>
 	<li>reset_world service added.</li>
 	<li>Option added to perform learning without gazebo simulation.</li>
 	<li>Turtlebot3 movements are now precise.</li>
 </ul>
+<<<<<<< HEAD
 </article>
   </div>
 
@@ -1085,3 +1093,5 @@
   </body>
 </html>
 
+=======
+>>>>>>> 669f7f55c8391d307fa9ddf00fa973b24f309a81
