@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(reinforcment)
+project(reinforcement)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -71,6 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
    GetActions.srv
    IsTerminalState.srv
    CheckEdge.srv
+   ResetWorldMsg.srv
  )
 
 ## Generate actions in the 'action' folder

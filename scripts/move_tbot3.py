@@ -50,28 +50,28 @@ class moveTbot3:
 				#raw_input()
 				target_pose = copy.deepcopy(current_pose)
 				target_pose.position.x += 0.5
-				direction = 'x'
+				#direction = 'x'
 				#incr y co-ordinate
 			elif current_yaw > (math.pi / 4.0 ) and current_yaw < (3.0 * math.pi / 4.0):
 				print "Case 2"
 				#raw_input()
 				target_pose = copy.deepcopy(current_pose)
 				target_pose.position.y += 0.5
-				direction = 'y'
+				#direction = 'y'
 				#decr x co
 			elif current_yaw > (-3.0*math.pi /4.0) and current_yaw < (-math.pi /4.0):
 				print "Case 3"
 				#raw_input()
 				target_pose = copy.deepcopy(current_pose)
 				target_pose.position.y -= 0.5
-				direction = '-y'
+				#direction = '-y'
 			else:
 				print "Case 4"
 				#raw_input()
 				target_pose = copy.deepcopy(current_pose)
 				target_pose.position.x -= 0.5
-				direction = '-x'
-			PID(target_pose,"linear", direction).publish_velocity()
+				#direction = '-x'
+			PID(target_pose,"linear").publish_velocity()
 			
 		elif action == "TurnCW" or action == "TurnCCW":
 			current_pose = self.pose
@@ -91,7 +91,7 @@ class moveTbot3:
 			target_quat = Quaternion(*tf.transformations.quaternion_from_euler(euler[0],euler[1],target_yaw))
 			target_pose.orientation = target_quat
 			print target_pose.orientation
-			PID(target_pose,"rotational",'None').publish_velocity()
+			PID(target_pose,"rotational").publish_velocity()
 
 		else:
 			print "Invalid action"

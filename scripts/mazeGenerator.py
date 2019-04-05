@@ -4,6 +4,7 @@ import argparse
 import random
 import pprint
 import json
+import copy
 
 class Maze:
 
@@ -25,6 +26,11 @@ class Maze:
 		self.grid_start = 0
 		self.myscale = myscale
 		self.blocked_edges = set()
+
+	def __deepcopy__(self, memodict={}):
+		new_maze = Maze(self.grid_dimension)
+		new_maze.blocked_edges = copy.deepcopy(self.blocked_edges)
+		return new_maze
 
 	def copy_empty_world(self,root_path):
 		f_in = open(root_path+'/worlds/empty_world.sdf', 'r')
@@ -207,12 +213,13 @@ class Maze:
 				subject_count += 1
 
 			trolliesCoords.append((x,y))
-			blocked_list = self.add_bloced_edges(x, y)
-			for blocked_edge in blocked_list:
-				if x > blocked_edge[0] or (x == blocked_edge[0] and y > blocked_edge[0]):
-					self.blocked_edges.add((blocked_edge[0], blocked_edge[1], x, y))
-				else :
-					self.blocked_edges.add(( x, y, blocked_edge[0], blocked_edge[1]))
+			for i in range(2):
+				for j in range(2):
+					self.blocked_edges.add((x+i*0.5,y + j*0.5,x+i*0.5 + 0.5,y+j*0.5))
+					self.blocked_edges.add((x+i*0.5,y + j*0.5,x+i*0.5,y+j*0.5+0.5))
+					self.blocked_edges.add((x+i*0.5,y + j*0.5,x+i*0.5,y+j*0.5-0.5))
+					self.blocked_edges.add((x+i*0.5 - 0.5,y + j*0.5,x+i*0.5,y+j*0.5))
+			blocked_list = [(x-0.5,y),(x,y-0.5),(x-0.5,y+0.5),(x,y+1),(x+1,y+0.5),(x+0.5,y+1),(x+1,y),(x+0.5,y-0.5)]
 			self.trolly_dict_generator(trollies, trollies_count, size, blocked_list, (x, y), subject_count)
 			self.add_trolly(f_out, x, y,scale, trollies_count)
 			trollies_count += 1

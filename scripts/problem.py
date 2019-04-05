@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 import sys
 import rospy
-from reinforcment.srv import *
+from reinforcement.srv import *
 from std_msgs.msg import String
 
 
-def get_initial_state():
+def get_current_state():
     """
     This function calls get_initial_state service to recive the initial state of the turtlebot.
 
@@ -13,22 +13,30 @@ def get_initial_state():
              y_cord - initial y-cordinate of turtlebot
              direction - initial orientation
     """
-    rospy.wait_for_service('get_initial_state')
+    rospy.wait_for_service('get_current_state')
     try:
-        get_initial_state = rospy.ServiceProxy('get_initial_state', GetInitialState)
+        get_initial_state = rospy.ServiceProxy('get_current_state', GetInitialState)
         response = get_initial_state()
         return response.state
     except rospy.ServiceException, e:
         print "Service call failed: %s"%e
 
-def is_terminal_state(state):
+def is_terminal_state():
     rospy.wait_for_service('is_terminal_state')
     try:
         is_term_state = rospy.ServiceProxy('is_terminal_state', IsTerminalState)
-        response = is_term_state(state)
+        response = is_term_state()
         return response.value
     except rospy.ServiceException, e:
         print "Service call failed: %s"%e
+
+def reset_world():
+    rospy.wait_for_service('reset_world')
+    try:
+        handle = rospy.ServiceProxy('reset_world',ResetWorldMsg)
+        response = handle()
+    except rospy.ServiceException, e:
+        print "Service call failedL %s"%e
 
 def get_all_actions():
     """
