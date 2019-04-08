@@ -210,7 +210,7 @@ class RobotActionsServer:
 			if np.random.random() <  0.85:
 				book_name = req.book_name
 				robot_state = self.get_turtlebot_location(self.current_state)
-				if book_name in self.object_dict["books"]:
+				if book_name in self.object_dict["books"] and book_name not in self.placed_books:
 					if (robot_state[0],robot_state[1]) in self.object_dict["books"][book_name]["load_loc"]:
 						if self.empty:
 							if not self.headless:
@@ -266,7 +266,7 @@ class RobotActionsServer:
 			if np.random.random() <  0.60:
 				book_name = req.book_name
 				robot_state = self.get_turtlebot_location(self.current_state)
-				if book_name in self.object_dict["books"]:
+				if book_name in self.object_dict["books"] and book_name not in self.placed_books:
 					if (robot_state[0],robot_state[1]) in self.object_dict["books"][book_name]["load_loc"]:
 						if self.empty:
 							self.change_gazebo_state(book_name,list(robot_state[:2])+[2])
